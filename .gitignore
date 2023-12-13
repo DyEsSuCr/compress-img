@@ -1,1 +1,7 @@
 node_modules
+optimized_images.json/
+*.png
+*.jpg
+*.webp
+*.gif
+*.svg

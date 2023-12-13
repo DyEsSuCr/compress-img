@@ -26,7 +26,7 @@ readdirSync(patchImages, { withFileTypes: true }).forEach((file) => {
       const optimizedFilePath = join(optimizePath, 'resize' + file.name)
 
       if (!optimizedImages.includes(file.name)) {
-        sharp(filePath).resize(200).toFile(optimizedFilePath, (err) => {
+        sharp(filePath).toFile(optimizedFilePath, (err) => {
           if (err) {
             console.error(`Error al optimizar la imagen ${file.name}:`, err)
           } else {
